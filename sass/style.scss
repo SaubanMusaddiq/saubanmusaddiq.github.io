@@ -111,6 +111,8 @@ body {
 	}
 	
 }
+
+
 a {
 	color: $brand-primary;
 	@include transition(.5s);
@@ -138,8 +140,14 @@ p {
 		font-weight: 700;
 	    color: #fff;
 	}
+	&.margin-5-0-5-0{
+		margin: 5px 0 5px 0;
+	}
 	&.margin-10-0-5-0{
 		margin: 10px 0 5px 0;
+	}
+	&.margin-5-0-10-0{
+		margin: 5px 0 10px 0;
 	}
 	&.margin-less-bot{
 		margin-bottom: 0;

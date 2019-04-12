@@ -45,8 +45,12 @@ p {
   p.font-bold {
     font-weight: 700;
     color: #fff; }
+  p.margin-5-0-5-0 {
+    margin: 5px 0 5px 0; }
   p.margin-10-0-5-0 {
     margin: 10px 0 5px 0; }
+  p.margin-5-0-10-0 {
+    margin: 5px 0 10px 0; }
   p.margin-less-bot {
     margin-bottom: 0; }
   p.close-knit {
