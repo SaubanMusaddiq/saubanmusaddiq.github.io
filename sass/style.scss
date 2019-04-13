@@ -89,6 +89,16 @@ $form-group-margin-bottom:       30px !default;
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
+*{
+  cursor:none;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
 
 
 body {
@@ -178,12 +188,30 @@ h1, h2, h3, h4, h5, h6 {
   background: $brand-primary;
 }
 
+.box {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        left: 50%;
+        margin: -50 0 0 -50px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        -webkit-backface-visibility: hidden;
+        opacity: 0;
+        cursor: none;
+        z-index: 1000;
+}
+
 #port-main {
 	max-width: 830px;
 	min-height: 600px;
 	margin: 5em auto 5em auto;
 	position: relative;
 	background: rgba(0, 0, 0, .85);
+	background: -moz-radial-gradient(center, ellipse cover, rgb(51, 51, 51) 0%, rgb(0, 0, 0) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(51, 51, 51) 0%, rgb(0, 0, 0) 100%);
+	background: radial-gradient(at center center, rgb(51, 51, 51) 0%, rgb(0, 0, 0) 100%);
 	overflow: hidden;
 	@include border-radius(7px);
 	@include transition(.5s);
