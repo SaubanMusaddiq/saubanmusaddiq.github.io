@@ -1,11 +1,11 @@
 $font-primary: 'Source Sans Pro', Arial, sans-serif;
 
-$grid-gutter-width: 40px !default; 
+$grid-gutter-width: 40px !default;
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
 $brand-primary: #db3218 !default;
-$brand-secondary: #3f95ea !default; 
+$brand-secondary: #3f95ea !default;
 
 
 
@@ -46,16 +46,16 @@ $form-group-margin-bottom:       30px !default;
           border-radius: $radius;
 }
 @mixin flex() {
-	display: -webkit-box;      
-  	display: -moz-box;         
-  	display: -ms-flexbox;      
-  	display: -webkit-flex;     
-  	display: flex;             
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
-	-webkit-flex-wrap: wrap; 
-	-moz-flex-wrap: wrap; 
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
 }
 
 @font-face {
@@ -70,7 +70,7 @@ $form-group-margin-bottom:       30px !default;
 }
 
 @mixin icomoon() {
-	
+
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -82,10 +82,10 @@ $form-group-margin-bottom:       30px !default;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	
+
 }
 
-// Import 
+// Import
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
@@ -119,7 +119,7 @@ body {
 		background-position: center center;
 		background-repeat: no-repeat;
 	}
-	
+
 }
 
 
@@ -202,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
         cursor: none;
         z-index: 1000;
 }
+
 
 #port-main {
 	max-width: 830px;
@@ -333,12 +334,21 @@ h1, h2, h3, h4, h5, h6 {
 			@media screen and (max-width: $screen-sm) {
 				padding: 4em .5em 5em .5em;
 			}
+
+
+
 		}
 	}
 }
 
 figure {
 	margin-bottom: 1.5em;
+  .profile-img{
+    height: 264px;
+    @media screen and (max-width: $screen-sm) {
+      height: 194px;
+    }
+  }
 }
 .port-grades {
 	font-size: 40px;
@@ -431,7 +441,7 @@ figure {
 	text-align: left;
 	width: 100%;
 	float: left;
-	margin-bottom: 3em; 
+	margin-bottom: 3em;
 	.port-icon {
 		float: left;
 		width: 10%;
@@ -535,11 +545,11 @@ figure {
 	padding-bottom: 4em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 1em;
-	}	
+	}
 }
 .row-bottom-padded-sm {
 	padding-bottom: 1em;
 	@media screen and (max-width: $screen-sm ) {
 		padding-bottom: 1em;
-	}	
+	}
 }
