@@ -77,7 +77,10 @@ p {
 .pad-bot-10{
   margin: 0 0 10px 0 !important;
 }
-
+.icon-kaggle{
+  margin-top: -9px;
+  margin-left: -4px;;
+}
 img.margin-top-15 {
     margin-top: 15px; }
 

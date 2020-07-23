@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 
@@ -29,7 +29,7 @@
 		var extraHeight = 0;
 
 		if ( isMobile.any() ) extraHeight = 50;
-		
+
 		setTimeout(function(){
 			$('#port-main').stop().animate({
 				'height': $('.port-tab-content.active').height() + extraHeight
@@ -80,7 +80,7 @@
 					pieChart();
 				}, 800);
 			}
-			
+
 		})
 	};
 	var createEventHandlers = function(){
@@ -123,5 +123,14 @@
 	      delay: 0
 	    }
 	  );
+
+		$(".icon-kaggle").hover(
+		  function() {
+		    $( this ).attr("src", 'images/icon/kaggle_red.png');
+		  }, function() {
+				$( this ).attr("src", 'images/icon/kaggle_white.png');
+		  }
+		);
+
 
 }());
