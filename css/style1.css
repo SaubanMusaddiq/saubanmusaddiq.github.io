@@ -116,6 +116,19 @@ small.small-small {
   }
 }
 
+hr.slick-hr{
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 58%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.hideme
+{
+    opacity:0;
+}
+
 
 ::-webkit-selection {
   color: #fff;
