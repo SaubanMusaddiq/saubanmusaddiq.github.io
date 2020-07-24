@@ -132,6 +132,9 @@
 		  }
 		);
 
+		if(isMobile.any()){
+			$('.desk-vis').addClass("hideme");
+		}
 		/* Every time the window is scrolled ... */
 		$(window).scroll( function(){
 
@@ -142,11 +145,16 @@
 						var bottom_of_window = $(window).scrollTop() + $(window).height();
 
 						/* If the object is completely visible in the window, fade it it */
-						if( bottom_of_window > bottom_of_object){
-
-								$(this).animate({'opacity':'1'},1000);
-
+						if(isMobile.any()){
+							if( bottom_of_window+100> bottom_of_object){
+									$(this).animate({'opacity':'1'},1000);
+							}
+						}else{
+							if( bottom_of_window-200 > bottom_of_object){
+									$(this).animate({'opacity':'1'},2000);
+							}
 						}
+
 
 				});
 

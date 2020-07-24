@@ -126,7 +126,7 @@ hr.slick-hr{
 }
 .hideme
 {
-    opacity:0;
+    opacity:0.1;
 }
 
 
@@ -395,10 +395,10 @@ figure {
     width: 88%; }
     @media screen and (max-width: 768px) {
       .port-feature .port-text {
-        width: 82%; } }
+        width: 86%; } }
     @media screen and (max-width: 480px) {
       .port-feature .port-text {
-        width: 72%; } }
+        width: 86%; } }
     .port-feature .port-text h2, .port-feature .port-text h3 {
       margin: 0;
       padding: 0; }
