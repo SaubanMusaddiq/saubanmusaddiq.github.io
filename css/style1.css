@@ -160,7 +160,9 @@ hr.slick-hr{
 .pie-img{
   top: -10px;
     position: relative;
+    transition: all .2s ease-in-out;
 }
+.pie-img:hover { transform: scale(1.5); }
 
 
 ::-webkit-selection {
