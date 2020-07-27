@@ -40,11 +40,11 @@
 	var pieChart = function() {
 		$('.chart').easyPieChart({
 			scaleColor: false,
-			lineWidth: 10,
+			lineWidth: 5,
 			lineCap: 'butt',
-			barColor: '#17e7a4',
+			barColor: '#db3218',
 			trackColor:	"#000000",
-			size: 160,
+			size: 120,
 			animate: 1000
 		});
 	};
@@ -137,10 +137,8 @@
 		}
 		/* Every time the window is scrolled ... */
 		$(window).scroll( function(){
-
 				/* Check the location of each desired element */
 				$('.hideme').each( function(i){
-
 						var bottom_of_object = $(this).position().top + $(this).outerHeight();
 						var bottom_of_window = $(window).scrollTop() + $(window).height();
 
@@ -154,10 +152,7 @@
 									$(this).animate({'opacity':'1'},2000);
 							}
 						}
-
-
 				});
-
 		});
 
 }());

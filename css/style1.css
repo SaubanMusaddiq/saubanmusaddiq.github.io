@@ -129,6 +129,39 @@ hr.slick-hr{
     opacity:0.1;
 }
 
+.pie-skill{
+    position: absolute;
+    top: 87px;
+    font-size: 17px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pie-perc{
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1b1b1b;
+  border: 3px solid #db3218;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  position: absolute;
+  top: -44px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 101;
+}
+.pie-img{
+  top: -10px;
+    position: relative;
+}
+
 
 ::-webkit-selection {
   color: #fff;
@@ -414,8 +447,8 @@ figure {
       text-transform: uppercase; }
 
 .chart {
-  width: 160px;
-  height: 160px;
+  width: 120px;
+  height: 130px;
   margin: 0 auto 30px auto;
   position: relative;
   text-align: center; }
