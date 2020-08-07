@@ -26,15 +26,17 @@
 	};
 
 	var getHeight = function() {
-		var extraHeight = 0;
+		var extraHeight = 10;
 
-		if ( isMobile.any() ) extraHeight = 50;
+		if ( isMobile.any() ) {
+			extraHeight = 50;
+		}
 
 		setTimeout(function(){
 			$('#port-main').stop().animate({
 				'height': $('.port-tab-content.active').height() + extraHeight
 			});
-		}, 200);
+		}, 100);
 	};
 
 	var pieChart = function() {
@@ -45,6 +47,15 @@
 			barColor: '#db3218',
 			trackColor:	"#000000",
 			size: 120,
+			animate: 1000
+		});
+		$('.chart-small').easyPieChart({
+			scaleColor: false,
+			lineWidth: 3,
+			lineCap: 'butt',
+			barColor: '#db3218',
+			trackColor:	"#000000",
+			size: 80,
 			animate: 1000
 		});
 	};

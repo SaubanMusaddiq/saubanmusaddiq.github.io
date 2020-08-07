@@ -77,6 +77,10 @@ p {
 .pad-bot-10{
   margin: 0 0 10px 0 !important;
 }
+.pad-top-30{
+  margin: 30px 0 0 0 !important;
+}
+
 .icon-kaggle{
   margin-top: -9px;
   margin-left: -4px;;
@@ -129,40 +133,6 @@ hr.slick-hr{
     opacity:0.1;
 }
 
-.pie-skill{
-    position: absolute;
-    top: 87px;
-    font-size: 17px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-.pie-perc{
-  font-size: 15px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #1b1b1b;
-  border: 3px solid #db3218;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  position: absolute;
-  top: -44px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 101;
-}
-.pie-img{
-  top: -10px;
-    position: relative;
-    transition: all .2s ease-in-out;
-}
-.pie-img:hover { transform: scale(1.5); }
 
 
 ::-webkit-selection {
@@ -465,7 +435,78 @@ figure {
   .chart canvas {
     position: absolute;
     left: 0;
-    top: 0; }
+    top: 0;
+  }
+  .chart .pie-skill{
+      position: absolute;
+      top: 87px;
+      font-size: 17px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .chart .pie-perc{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1b1b1b;
+    border: 3px solid #db3218;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: -44px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 101;
+  }
+  .chart .pie-img{
+    top: -10px;
+      position: relative;
+      transition: all .2s ease-in-out;
+  }
+  .chart .pie-img:hover { transform: scale(1.5); }
+
+  .chart-small {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 30px auto;
+    position: relative;
+    text-align: center; }
+    .chart-small span {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -30px;
+      width: 100%; }
+      .chart-small span strong {
+        display: block; }
+    .chart-small canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .chart-small .pie-skill{
+        position: absolute;
+        top: 72px;
+        font-size: 15px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .chart-small .pie-img{
+      top: 5px;
+        position: relative;
+        transition: all .2s ease-in-out;
+    }
+    .chart-small .pie-img:hover { transform: scale(1.5); }
 
 #port-footer {
   margin-top: 50px;
