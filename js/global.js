@@ -137,9 +137,16 @@
 
 		$(".icon-kaggle").hover(
 		  function() {
-		    $( this ).attr("src", 'images/icon/kaggle_red.png');
+		    $( this ).attr("src", 'images/icon/kaggle_red.webp');
 		  }, function() {
-				$( this ).attr("src", 'images/icon/kaggle_white.png');
+				$( this ).attr("src", 'images/icon/kaggle_white.webp');
+		  }
+		);
+		$(".icon-leet").hover(
+		  function() {
+		    $( this ).attr("src", 'images/icon/lc_orig.webp');
+		  }, function() {
+				$( this ).attr("src", 'images/icon/lc_white.webp');
 		  }
 		);
 
